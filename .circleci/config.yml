@@ -9,6 +9,10 @@ jobs:
           name: echo Hello World
           command: |
             echo "A first hello"  
+      - run:
+          name: print job name
+          command: |
+            echo $CIRCLE_JOB
 workflows:
   version: 2
   workflow:
