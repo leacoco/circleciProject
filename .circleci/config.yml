@@ -8,4 +8,9 @@ jobs:
       - run: 
           name: echo Hello World
           command: |
-            echo "A first hello"     
+            echo "A first hello"  
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - hello_world   
