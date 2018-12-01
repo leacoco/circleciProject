@@ -1,8 +1,11 @@
 version: 2
 jobs:
-  build:
+  hello_world:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
       - checkout
-      - run: echo "A first hello"     
+      - run: 
+          name: echo Hello World
+          command: |
+            echo "A first hello"     
